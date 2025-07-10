@@ -21,10 +21,11 @@
     --destaque: #f85483;
     --darkdestaque: #dd4b74;
     --destaque-focus: #cb476c12;
-    --secundaria: #ffffffc1;
+    --secundaria: #ffffffa3;
     --amarelo: #ffe57e;
     --darkyellow: #efcc41;
-    --escurecer: #0000000c;
+    --escurecer: #0000000e;
+    --escurecerhover: #05050522;
     --gradient: linear-gradient(90deg, #ebf7f5 0%, #f5f5e3 50%, #f5e4dc 100%);
     --gradient-blur: linear-gradient(90deg, #ebf7f595 0%, #f5f5e394 50%, #f5e4dc98 100%);
 }
@@ -40,6 +41,7 @@
    --amarelo: #f8d651;
    --darkyellow: #dcb92e;
    --escurecer: #646683;
+   --escurecerhover: #54566f;
    --gradient: linear-gradient(90deg, #292f3f 0%, #36394D 50%, #423A57 100%);
    --gradient-blur: linear-gradient(90deg, #292f3fe0 0%, #36394ddd 50% #423a57e2 100%);
 }
@@ -49,6 +51,11 @@
     padding: 0;
     font-family: quicksand;
     box-sizing: border-box;
+}
+
+*::selection {
+  background: #76d5da;
+  color: white;
 }
 
 html {
@@ -354,11 +361,25 @@ button a {
 }
 
 /* Section 2: About me */
-#section-aboutme {
+#section-aboutme{
+    background-color: var(--secundaria);
+    border-radius: 40px;
+    padding: 50px;
+}
+
+#section-aboutme .network{
+    padding: 20px 0px 0px 0px;
+}
+
+#section-aboutme .network li{
+    font-size: 14px;
+}
+
+.container-aboutme {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 50px;
 }
 
 .aboutme-description h1{
@@ -366,12 +387,12 @@ button a {
 }
 
 .aboutme-description{
-    width: 55%;
+    width: 65%;
 }
 
 .foto-perfil {
-    padding: 20px;
     width: 35%;
+    height: 100%;
 }
 
 .foto-perfil-mobile{
@@ -379,15 +400,18 @@ button a {
 }
 
 .foto-perfil img {
-    border-radius: 100%;
+    border-radius: 50px;
     object-fit: cover;
     width: 100%;
+    height: 600px;
+    border: 20px solid var(--escurecer);
 }
 
 .knowledge {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
+    padding: 15px 0px;
 }
 
 .knowledge li {
@@ -396,11 +420,42 @@ button a {
     border-radius: 20px;
     padding: 3px 10px;
     font-size: 14px;
+    transition: 0.2s linear;
 }
 
-.knowledge li:hover {
+.knowledge li:hover{
     background-color: var(--darkyellow);
 }
+
+.aboutme-divisor {
+    display: flex;
+    gap: 35px;
+}
+
+.aboutme-subsection{
+    width: 50%;
+}
+
+.aboutme-subsection div{
+    background-color: var(--escurecer);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 0px;
+    transition: 0.2s linear;
+}
+
+.aboutme-subsection div:hover{
+    background-color: var(--escurecerhover);
+}
+
+#section-aboutme h2{
+    font-size: 20px;
+}
+
+#section-aboutme h3{
+    font-size: 16px;
+}
+
 
 /* Section 3: Portfolio */
 #section-portfolio .section-header{
@@ -437,6 +492,7 @@ button a {
     overflow: hidden;
     background-color: var(--secundaria);
     border-radius: 20px;
+    border: 20px solid var(--secundaria);
 }
 
 .photos {
@@ -501,6 +557,11 @@ button a {
 
 .event-descriptions {
     width: 40%;
+    transition: 1s;
+}
+
+.description{
+    transition: 1s;
 }
 
 /* Section 5: testimonials */
@@ -630,8 +691,11 @@ footer p {
 .network {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    padding: 40px;
+    gap: 30px;
+}
+
+.container-network {
+    padding: 50px;
 }
 
 .network li i{
@@ -639,7 +703,14 @@ footer p {
     transition: 0.2s linear;
 }
 
-.network li i:hover{
+.network li{
+    transition: 0.2s linear;
+}
+
+.network li a:hover{
     color: var(--destaque);
+}
+
+.network li:hover{
     transform: scale(1.03);
 }

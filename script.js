@@ -1,6 +1,7 @@
 // Slides
 let photos = document.querySelector('.photos');
 let eventPhoto = document.querySelectorAll('.event-photo');
+let descriptions = document.querySelectorAll('.description');
 let dots = document.querySelectorAll('.dots li');
 let previous = document.getElementById('previous');
 let next = document.getElementById('next');
@@ -32,6 +33,15 @@ let refreshSlides = setInterval(() => {next.click();}, 4000);
 function reloadSlider(){
     let checkLeft = eventPhoto[active].offsetLeft;
     photos.style.left = -checkLeft + "px";
+
+    // Oculta todas as descrições
+    descriptions.forEach(desc => {
+    desc.style.display = "none";
+});
+
+    // Mostra a descrição correspondente à imagem atual
+    descriptions[active].style.display = "block";
+
 
     let activeDot = document.querySelector('.dots li.active');
     activeDot.classList.remove('active');
