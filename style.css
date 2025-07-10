@@ -1,16 +1,16 @@
 @font-face {
     font-family: MissFardose;
-    src: url("../0. Portifólio/Fontes/MissFajardose-Regular.ttf");
+    src: url("Fontes/MissFajardose-Regular.ttf");
 }
 
 @font-face {
     font-family: Quicksand;
-    src: url('../0. Portifólio/Fontes/Quicksand/Quicksand-VariableFont_wght.ttf');
+    src: url('Fontes/Quicksand/Quicksand-VariableFont_wght.ttf');
 }
 
 @font-face {
     font-family: WindSong;
-    src: url('../0. Portifólio/Fontes/WindSong/WindSong-Regular.ttf');
+    src: url('Fontes/WindSong/WindSong-Regular.ttf');
 }
 
 
