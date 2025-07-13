@@ -28,8 +28,6 @@ previous.onclick = function(){
     reloadSlider();
 };
 
-let refreshSlides = setInterval(() => {next.click();}, 4000);
-
 function reloadSlider(){
     let checkLeft = eventPhoto[active].offsetLeft;
     photos.style.left = -checkLeft + "px";
@@ -47,9 +45,7 @@ function reloadSlider(){
     activeDot.classList.remove('active');
     dots[active].classList.add('active');
 
-    clearInterval(refreshSlides);
-    refreshSlides = setInterval(() => {next.click();}, 4000);
-}
+   }
 
 dots.forEach ((li, key) => {
     li.addEventListener('click', function(){
@@ -57,6 +53,10 @@ dots.forEach ((li, key) => {
         reloadSlider();
     })
 })
+
+// Ao carregar a página, garante que só a descrição ativa apareça
+reloadSlider();
+
 
 
 // Darkmode

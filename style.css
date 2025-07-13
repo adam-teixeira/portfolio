@@ -22,8 +22,8 @@
     --darkdestaque: #dd4b74;
     --destaque-focus: #cb476c12;
     --secundaria: #ffffffa3;
-    --amarelo: #ffe57e;
-    --darkyellow: #efcc41;
+    --amarelo: #fad51a;
+    --darkyellow: #ddb92a;
     --escurecer: #0000000e;
     --escurecerhover: #05050522;
     --gradient: linear-gradient(90deg, #ebf7f5 0%, #f5f5e3 50%, #f5e4dc 100%);
@@ -134,7 +134,7 @@ section:not(#landing-page) {
 .card {
     border-radius: 20px;
     background-color: var(--secundaria);
-    padding: 25px;
+    padding: 20px;
     width: 50%;
     height: auto;
     box-shadow: 0px 5px 10px 1px #0000000f;
@@ -285,14 +285,14 @@ button a {
 }
 
 .btn-contact:hover{
-    border: 1px solid var(--darkyellow);
+    border: 1px solid var(--amarelo);
     background-color: transparent;
     transform: scale(1.02);
-    color: var(--darkyellow);
+    color: var(--amarelo);
 }
 
 .btn-contact:hover a {
-    color: var(--darkyellow);
+    color: var(--amarelo);
 }
 
 .btn-normal{
@@ -407,14 +407,14 @@ button a {
     border: 20px solid var(--escurecer);
 }
 
-.knowledge {
+.tags {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     padding: 15px 0px;
 }
 
-.knowledge li {
+.tags li {
     background-color: var(--amarelo) ;
     border: none;
     border-radius: 20px;
@@ -423,7 +423,7 @@ button a {
     transition: 0.2s linear;
 }
 
-.knowledge li:hover{
+.tags li:hover{
     background-color: var(--darkyellow);
 }
 
@@ -546,7 +546,7 @@ button a {
     width: 10px;
     height: 10px;
     background-color: white;
-    margin: 20px;
+    margin: 10px;
     border-radius: 20px;
     transition: 1s;
 }
