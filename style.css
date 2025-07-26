@@ -18,12 +18,12 @@
     --texto: #23272a;
     --input: #787879;
     --primaria: #FFFBF2;
-    --destaque: #f85483;
-    --darkdestaque: #dd4b74;
+    --destaque: #e1507a;
+    --darkdestaque: rgb(196, 66, 103);
     --destaque-focus: #cb476c12;
-    --secundaria: #ffffffa3;
-    --amarelo: #fad51a;
-    --darkyellow: #ddb92a;
+    --secundaria: #ffffff;
+    --amarelo: #f6b511;
+    --darkyellow: #dda006;
     --escurecer: #0000000e;
     --escurecerhover: #05050522;
     --gradient: linear-gradient(90deg, #ebf7f5 0%, #f5f5e3 50%, #f5e4dc 100%);
@@ -34,11 +34,11 @@
    --texto: #fafafa;
    --input: #b8b8b8;
    --primaria: #FFFBF2;
-   --destaque: #f85483;
+   --destaque: #e1507a;
    --darkdestaque: #dd4b74;
-   --destaque-focus: rgba(233, 163, 183, 0.312);
+   --destaque-focus: #e9a3b750;
    --secundaria: #484a62;
-   --amarelo: #f8d651;
+   --amarelo: #f6b511;
    --darkyellow: #dcb92e;
    --escurecer: #646683;
    --escurecerhover: #54566f;
@@ -54,8 +54,7 @@
 }
 
 *::selection {
-  background: #76d5da;
-  color: white;
+  background: #e9a3b750;
 }
 
 html {
@@ -87,9 +86,18 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 section:not(#landing-page) {
-    margin: 100px 0 0 0;
+    /* margin: 150px 0 0 0; */
     scroll-margin-top: 130px;
 }
+
+section{
+    margin: 0px;
+    padding: 100px 10%;;
+}
+
+/* section:nth-child(odd){
+    background-color: var(--secundaria);
+} */
 
 .section-header {
     display: flex;
@@ -102,7 +110,6 @@ section:not(#landing-page) {
   margin-top: 20px;
 }
 
-
 .title{
     padding: 0px 0px 10px 0px;
     font-size: 18px;
@@ -112,23 +119,30 @@ section:not(#landing-page) {
     padding: 0px 0px 15px 0px;
 }
 
-.section-title {
+.section-title{
     font-size: 30px;
-    padding: 0px 0px 10px 0px;
+    padding: 20px 0px 100px 0px;
+    /* width: 400px; */
 }
 
-.section-subtitle{
-    font-size: 25px;
+.section-title:not(#section-aboutme .section-title, #section-testimonials .section-title) {
+    text-align: center;
 }
 
-.section-subtitle-down {
-    padding: 20px 0px 0px 0px;
+.section-minititle{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.section-minititle:not(#section-aboutme .section-minititle, #section-testimonials .section-minititle) {
+    text-align: center;
 }
 
 .container-card {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: center;
 }
 
 .card {
@@ -146,10 +160,30 @@ section:not(#landing-page) {
     cursor: pointer;
 }
 
-/* Landing Page */
-#conteudo {
-    margin: 0% 10%;
+.card-static {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--texto);
+    border-radius: 20px;
+    background-color: var(--secundaria);
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    transition: 0.2s linear;
 }
+
+.card-static:hover {
+    background-color: var(--amarelo);
+    transform: none;
+    cursor: default;
+}
+
+span {
+    color: var(--destaque);
+    font-weight: 500;
+}
+
+/* Landing Page */
 
 #logo{
     font-family: windsong;
@@ -178,7 +212,7 @@ p, h1, h2, h3, a{
     margin: 0;
     z-index: 10;
     padding: 0% 3%;
-    background: var(--gradient-blur);
+    background: transparent;
     backdrop-filter: blur(30px);
     display: flex;
     justify-content: space-between;
@@ -349,23 +383,54 @@ button a {
     border-radius: 100%;
 }
 
-/* Section 1: Blog */
-
-#section-blog .container-card .card p {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-align: left;
+/* section: experience */
+.experience-info {
+    border-left: 2.5px solid var(--amarelo);
+    padding: 0px 0px 0px 15px;
+    margin: 20px 0px 0px 0px;
+    /* border-radius: 10px; */
 }
 
-/* Section 2: About me */
-#section-aboutme{
+.year{
+    font-size: 14px;
+}
+
+.icon-card {
+    display: flex;
+    border-radius: 50%;
+    background-color: #93e0f1c3;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-card i{
+    text-align: center;
+    font-size: 20px;
+    color: var(--texto);
+}
+
+.identification {
+    display: flex;
+    /* padding: 20px 0px 0px 0px; */
+    gap: 10px;
+    /* justify-content: center; */
+}
+
+.identification .title{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Section: About me */
+/* #section-aboutme{
     background-color: var(--secundaria);
     border-radius: 40px;
     padding: 50px;
-}
+} */
+
 
 #section-aboutme .network{
     padding: 20px 0px 0px 0px;
@@ -404,7 +469,7 @@ button a {
     object-fit: cover;
     width: 100%;
     height: 600px;
-    border: 20px solid var(--escurecer);
+    border: 20px solid var(--secundaria);
 }
 
 .tags {
@@ -476,7 +541,13 @@ button a {
 }
 
 
+/* Section: Services */
+#section-services .card-static{
+    width: 25%;
+}
+
 /* Section 4: Events */
+
 .container-slide {
     display: flex;
     align-items: center;
@@ -565,24 +636,9 @@ button a {
 }
 
 /* Section 5: testimonials */
-#section-testimonials .container-card .card {
-    display: flex;
-    flex-direction: column;
+#section-testimonials .container-card .card-static{
     justify-content: space-between;
-    box-shadow: none;
-    border: 1px solid var(--texto);
-}
-
-#section-testimonials .container-card .card:hover {
-    background-color: var(--amarelo);
-    transform: none;
-    cursor: default;
-}
-
-.identification {
-    display: flex;
-    padding: 20px 0px 0px 0px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .photo img{
@@ -592,7 +648,31 @@ button a {
     border-radius: 100%;
 }
 
-/* Section 6: Contact */
+/* BLOG */
+.img-blog {
+    width: 100%;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+}
+
+.img-blog img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.redirect{
+    font-size: 14px;
+    padding: 30px 0px 0px 0px;
+}
+
+.redirect a:hover {
+    color: var(--destaque);
+}
+
+
+/* Section: Contact */
 
 #section-contact {
     display: flex;
