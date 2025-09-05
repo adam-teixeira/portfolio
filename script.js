@@ -59,7 +59,7 @@ reloadSlider();
 
 
 
-// Darkmode
+//Darkmode
 let darkmode = localStorage.getItem('darkmode');
 const themeSwitch = document.getElementById('theme-switch');
 
@@ -70,16 +70,16 @@ const enableDarkMode = () => {
 
 const disableDarkmode = () => {
     document.body.classList.remove('darkmode');
-    localStorage.setItem('darkmode', null);
+    localStorage.removeItem('darkmode');
 }
 
-if(darkmode === 'active') enableDarkMode();
+if (darkmode === 'active') enableDarkMode();
 
 themeSwitch.addEventListener('click', () => {
     darkmode = localStorage.getItem('darkmode');
-    if(darkmode !== 'active'){
-        enableDarkMode()
-    }else{
-        disableDarkmode()
+    if (darkmode !== 'active') {
+        enableDarkMode();
+    } else {
+        disableDarkmode();
     }
 });

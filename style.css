@@ -28,6 +28,12 @@
     --gradient-blur: linear-gradient(90deg, #ebf7f595 0%, #f5f5e394 50%, #f5e4dc98 100%);
 }
 
+/* #1a1a1a	(26,26,26)
+#857e7e	(133,126,126)
+#c5c5c5	(197,197,197)
+#470012	(71,0,18)
+#7a002b	(122,0,43) */
+
 .darkmode {
    --texto: #fafafa;
    --input: #b8b8b8;
@@ -59,8 +65,6 @@ html {
 }
 
 body {
-    /* background-color: var(--primaria); */
-    background: var(--primaria);
     background: var(--gradient);
     overflow-x: hidden;
 }
@@ -89,7 +93,7 @@ section:not(#landing-page) {
 
 section{
     margin: 0px;
-    padding: 100px 10%;;
+    padding: 70px 10%;;
 }
 
 /* section:nth-child(odd){
