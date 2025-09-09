@@ -1,0 +1,174 @@
+@media (max-width: 767px) {
+
+    #conteudo{
+         margin: 0% 4%;
+    }
+
+    .container-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 25px;
+        width: 100%;
+    }
+
+    .card:hover{
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    p, button, li {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .section-subtitle{
+        font-size: 23px;
+    }   
+
+    button {
+        padding: 6px 15px;
+    }
+
+    #itens-menu li, .btn-contact {
+        display: none;
+    }
+
+    #menu-mobile-icon{
+        display: block;
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        border-radius: 50%;
+    }
+
+    #landing-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+        justify-content: center;
+    }
+    
+    .text-landing {
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        text-align: center;
+    }
+
+    #landing-title {
+        font-size: 30px;
+    }
+
+    .foto-landing {
+        display: none;
+    }
+
+    #section-aboutme {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .aboutme-description{
+        width: 100%;
+    }
+
+    .aboutme-description h1{
+        text-align: center;
+    }
+
+    .foto-perfil {
+        display: none;
+    }
+    
+    .foto-perfil-mobile{
+        padding: 20px;
+        width: 100%;
+        display: block;
+    }
+
+    .foto-perfil-mobile img {
+        border-radius: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .knowledge {
+        gap: 5px;
+    }
+
+    .knowledge li {
+        font-size: 12px;
+    }
+
+    #section-portfolio .container-card{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section-portfolio .card {
+        width: 47%;
+    }
+
+    .img-portfolio img {
+        height: 150px;
+    }
+    
+    .slides {
+        width: 600px;
+        height: 500px;
+        max-width: 90vw;
+        position: relative;
+        overflow: hidden;
+        background-color: var(--secundaria);
+        border-radius: 20px;
+    }
+
+    #contact-forms {
+        width: 100%;
+    }
+    
+    .row {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .row .input-group {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    form .btn-contact {
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .container-slide {
+        flex-direction: column;
+    }
+
+    .event-descriptions {
+        width: 100%;
+    }
+
+    .network {
+        gap: 30px;
+    }
+
+    .network li i{
+        font-size: 25px;
+    }
+}
