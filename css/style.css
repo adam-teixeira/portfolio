@@ -1,16 +1,16 @@
 @font-face {
     font-family: MissFardose;
-    src: url("Fontes/MissFajardose-Regular.ttf");
+    src: url("../assets/fontes/MissFajardose-Regular.ttf");
 }
 
 @font-face {
     font-family: Quicksand;
-    src: url('Fontes/Quicksand/Quicksand-VariableFont_wght.ttf');
+    src: url('../assets/fontes/Quicksand/Quicksand-VariableFont_wght.ttf');
 }
 
 @font-face {
     font-family: WindSong;
-    src: url('Fontes/WindSong/WindSong-Regular.ttf');
+    src: url('../assets/fontes/WindSong/WindSong-Regular.ttf');
 }
 
 
@@ -115,17 +115,6 @@ section{
     background-color: var(--primaria);
 } */
 
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0px;
-}
-
-.section-header:not(:first-of-type) {
-  margin-top: 20px;
-}
-
 .title{
     padding: 0px 0px 10px 0px;
     font-size: 18px;
@@ -153,7 +142,7 @@ section{
 .container-card {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 1rem;
     justify-content: center;
     
 }
@@ -195,8 +184,6 @@ span {
     color: var(--destaque);
     font-weight: 500;
 }
-
-/* Landing Page */
 
 #logo{
     font-family: windsong;
@@ -244,13 +231,13 @@ p, h1, h2, h3, a{
 
 #menu-right {
   justify-content: flex-end;
-  gap: 20px;
+  gap: 1rem;
   margin-left: 0;
 }
 
 #itens-menu {
   display: flex;
-  gap: 20px;
+  gap: 1rem;
 }
 
 #menu-mobile-icon {
@@ -334,6 +321,7 @@ button:hover a {
     color: var(--destaque);
 }
 
+/* Landing Page */
 
 #landing-page {
     display: flex;
@@ -348,7 +336,7 @@ button:hover a {
     align-items: flex-start;
     width: 40%;
     height: auto;
-    gap: 25px;
+    gap: 1rem;
 }
 
 #landing-title {
@@ -397,7 +385,7 @@ button:hover a {
 .identification {
     display: flex;
     /* padding: 20px 0px 0px 0px; */
-    gap: 10px;
+    gap: 1rem;
     /* justify-content: center; */
 }
 
@@ -424,7 +412,7 @@ button:hover a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 4rem;
 }
 
 .aboutme-description h1{
@@ -455,7 +443,7 @@ button:hover a {
 .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 0.5rem;
     padding: 15px 0px;
 }
 
@@ -499,15 +487,9 @@ button:hover a {
     border-radius: 15px;
 }
 
-
-/* Section: Services */
-#section-services .card-static{
-    width: 25%;
-}
-
 /* Section 4: Events */
 
-.container-slide {
+/* .container-slide {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -592,12 +574,12 @@ button:hover a {
 
 .description{
     transition: 1s;
-}
+} */
 
 /* Section 5: testimonials */
 #section-testimonials .container-card .card-static{
     justify-content: space-between;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .photo img{
@@ -693,7 +675,7 @@ input::placeholder, textarea::placeholder {
 .row {
     display: flex;
     justify-content: space-between ;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .row .input-group {
@@ -730,7 +712,7 @@ footer p {
 .network {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 1rem;
 }
 
 .container-network {
