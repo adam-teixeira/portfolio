@@ -106,7 +106,7 @@ html {
 }
 
 /* body {
-  background-image: url("./assets/fundo-branco-com-textura-de-parede-suja.jpg");
+  background-image: url("../assets/img/Wallpaper/24894700-4ab5-4d92-a902-a00c6fac36be.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -191,7 +191,7 @@ section{
     padding: 20px;
     width: 50%;
     height: auto;
-    box-shadow: 0px 5px 10px 1px #0000000f;
+    box-shadow: 0px 5px 10px 1px #0000001a;
     transition: 0.2s linear;
 }
 
@@ -214,6 +214,8 @@ section{
 .card-static:hover {
     transform: none;
     cursor: default;
+
+    border: 1px solid var(--destaque);
 }
 
 span {
@@ -223,7 +225,7 @@ span {
 
 #logo{
     font-family: ashborn;
-    font-size: 60px;
+    font-size:65px;
     margin-right: auto;
     padding: 10px 20px 10px 0px;
 }
@@ -406,7 +408,6 @@ button:hover a {
 .foto-landing img {
     width: 100%;
     object-fit: cover;
-    border-radius: 100%;
 }
 
 /* section: about me */
@@ -435,6 +436,10 @@ button:hover a {
   max-width: 400px;
   border-radius: 40px;
   border: 20px solid var(--primaria);
+}
+
+.foto-perfil-mobile {
+    display: none;
 }
 
 .tags {
