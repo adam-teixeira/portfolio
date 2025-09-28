@@ -8,6 +8,15 @@
         flex-wrap: wrap;
     }
 
+    #logo-mobile{
+        align-items: center;
+        display: block;
+    }
+
+    #logo{
+        display: none;
+    }
+
     .card {
         width: 100%;
     }
@@ -16,10 +25,10 @@
         width: 100% !important; 
     }
 
-    #section-portfolio .container-card, #section-blog .container-card {
+    /* #section-portfolio .container-card, #section-blog .container-card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
+    } */
 
     #section-portfolio .tags{
         display: none;
