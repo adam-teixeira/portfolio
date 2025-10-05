@@ -105,6 +105,10 @@
         gap: 1rem;
     }
 
+    .formacao, .experiencia{
+    display: none;
+}
+
     .aboutme-description{
         width: 100%;
     }

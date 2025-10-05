@@ -90,4 +90,73 @@ if (themeSwitch) {
 // reloadSlider();
 
 
+// window.onload = () => {
+//   const hash = window.location.hash.substring(1); // pega o que vem depois de #
+//   const artigos = document.querySelectorAll("article");
+
+//   // Esconde todos os artigos
+//   artigos.forEach(artigo => {
+//     artigo.style.display = "none";
+//   });
+
+//   // Mostra só o que tem o id do hash
+//   if (hash) {
+//     const escolhido = document.getElementById(hash);
+//     if (escolhido) {
+//       escolhido.style.display = "block";
+//     }
+//   }
+
+//   // Garante que o footer sempre aparece
+//   const footer = document.querySelector("footer");
+//   if (footer) footer.style.display = "block";
+// };
+
+
+//menu desaparecendo
+let lastScrollTop = 0; // Posição anterior da rolagem
+const menu = document.getElementById("menu");
+
+window.addEventListener("scroll", function() {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop && currentScroll > 100) {
+    // Rolando pra baixo e já passou do topo
+    menu.style.top = "-120px"; // Move o menu pra fora da tela
+  } else {
+    // Rolando pra cima
+    menu.style.top = "0";
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita valores negativos
+}, false);
+
+//scroll
+const sections = document.querySelectorAll('section');
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+  const revealPoint = 100;
+
+  sections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+
+    if (sectionTop < windowHeight - revealPoint) {
+      // Evita reaplicar delays toda hora
+      if (!section.classList.contains('revealed')) {
+        section.classList.add('revealed');
+
+        // Aplica o delay leve nos filhos diretos
+        const children = section.querySelectorAll(':scope > *');
+        children.forEach((child, index) => {
+          child.style.transitionDelay = `${index * 150}ms`;
+        });
+      }
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
+
 

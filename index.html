@@ -12,29 +12,21 @@
 
 <body>
     <nav id="menu">
-        <div id="menu-left">
-            <button id="menu-mobile-icon"><i class="fa-solid fa-bars"></i></button>
-            <a href="#" id="logo">Ada<span id="logospan">M</span></a>
-        </div>
-
-        <div id="menu-center">
-            <a href="#" id="logo-mobile">Ada<span id="logospan">M</span></a>
-            <ul id="itens-menu">
-                <li><a href="#section-aboutme">Sobre</a></li>
-                <li><a href="#section-portfolio">Portfólio</a></li>
-                <li><a href="#section-testimonials">Testemunhos</a></li>
-                <li><a href="#section-blog">Blog</a></li>
-            </ul>
-        </div>
-
-        <div id="menu-right">
-            <button id="theme-switch">
-                <i class="fa-solid fa-moon"  id="icon-moon"></i>
-                <i class="fa-solid fa-sun" id="icon-sun"></i>
-            </button>
-            <button class="btn-contact"><a href="#footer">Contato</a></button>
-        </div>
+        <ul id="itens-menu">
+            <li><a href="#landing-page">Início</a></li>
+            <li><a href="#section-aboutme">Sobre</a></li>
+            <li><a href="#section-portfolio">Portfólio</a></li>
+            <li class="logo"><a href="#landing-page" class="logo">Ada<span class="logospan">M</span></a></li>
+            <li><a href="#section-testimonials">Testemunhos</a></li>
+            <li><a href="#section-blog">Blog</a></li>
+            <li><a href="#footer">Contato</a></li>
+        </ul>
+        <button id="theme-switch">
+            <i class="fa-solid fa-moon" id="icon-moon"></i>
+            <i class="fa-solid fa-sun" id="icon-sun"></i>
+        </button>
     </nav>
+
 
         <!-- Landing Page -->
         <section id="landing-page">
@@ -42,7 +34,7 @@
                 <h1 id="landing-title">Bem vindo! Sou o Adam <br> </h1>
                 <p>Engenheiro de Computação em formação e apaixonado por criar soluções que unem tecnologia, acessibilidade e impacto social. Meu sonho é viver experiências interculturais e levar comigo a missão de criar tecnologia empática em escala global.</p>
                 
-                <button class="btn-normal"><a href="#section-aboutme"><i class="fa-regular fa-circle-down"></i>Conheça meu universo!</a></button>
+                <button class="btn-normal"><a href="#section-aboutme"><i class="fa-solid fa-circle-down"></i>Conheça meu universo!</a></button>
             </div>
 
             <div class="foto-landing">
@@ -66,7 +58,7 @@
             <div class="cards-left">
                 
             <div class="card-static objetivo">
-                <h3 class="title"> <i class="fi fi-rr-info"></i>Objetivo</h3>
+                <h3 class="title"> <i class="fa-solid fa-circle-info"></i>Objetivo</h3>
                 <div class="experience-info">
                 <p>
                     Sou um homem trans de 23 anos que encontra inspiração em livros, pincéis,
@@ -79,7 +71,7 @@
             </div>
 
             <div class="card-static experiencia">
-                <h3 class="title"><i class="fi fi-rr-briefcase"></i>Experiência</h3>
+                <h3 class="title"><i class="fa-solid fa-briefcase"></i></i>Experiência</h3>
                 <div class="experience-info">
                 <p>
                     Atuo como estagiário apoiando alunos da trilha de
@@ -100,7 +92,7 @@
             <img src="./assets/img/fotos/goth1.jpeg"
                 alt="Homem de 23 anos, cabelo azul cacheado, pele parda e olhos castanhos.">
             <ul class="network">
-                <li><a href="mailto:adamsts2002@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-envelope" alt="Email"></i></a></li>
+                <li><a href="mailto:adamsts2002@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope" alt="Email"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/adam-sousa/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" alt="LinkedIn"></i></a></li>
                 <li><a href="https://github.com/adam-teixeira" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" alt="Github"></i></a></li>
                 <li><a href="https://medium.com/@adamsts" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-medium" alt="Medium"></i></a></li>
@@ -112,7 +104,7 @@
             <!-- Coluna Direita: Formação e Habilidades -->
             <div class="cards-right">
             <div class="card-static formacao">
-                <h3 class="title"><i class="fi fi-rr-graduation-cap"></i>Formação</h3>
+                <h3 class="title"><i class="fa-solid fa-graduation-cap"></i></i>Formação</h3>
                 <div class="experience-info">
                 <p>
                     Sou estudante de <strong>Engenharia de Computação</strong> no UNASP,
@@ -124,7 +116,7 @@
             </div>
 
             <div class="card-static habilidades">
-                <h3 class="title"><i class="fi fi-rr-checkbox"></i>Habilidades</h3>
+                <h3 class="title"><i class="fa-solid fa-list-check"></i>Habilidades</h3>
                 <div class="experience-info">
                 <ul class="tags">
                     <li><i class="fa-brands fa-html5"></i> HTML</li>
@@ -156,45 +148,49 @@
     
             <!-- Sub-Section: Projects -->
             <div class="container-card">
-                <div class="card">
+                <div class="card"><a href="projetos.html#ela">
                     <div class="img-portfolio"><img src="./assets/img/projetos/ELA_Modelo3D.png" alt="Project"></div>
-                    <h3 class="title">Robotic hand for ALS patients</h3>
+                    <h3 class="title">OMRA.ELA</h3>
                     <ul class="tags">
                         <li>Arduino</li>
                         <li>AutoCAD</li>
                         <li>Notion</li>
                     </ul>
-                    <p>A robotic orthosis to help patients suffering from ALS.</p>
+                    <p>Órtese de Mão robótica com Arduino Para Esclerose Lateral Amiotrófica.</p>
+                    </a>
                 </div>
         
-                <div class="card">
+                <div class="card"><a href="projetos.html#sensoroptics">
                     <div class="img-portfolio"><img src="./assets/img/projetos/SensorOptics.jpg" alt="Project"></div>
                     <h3 class="title">Sensor Optics</h3>
                     <ul class="tags">
                         <li>Arduino</li>
                         <li>C++</li>
                     </ul>
-                    <p>Smart glasses with vibration sensors for visually impaired people.</p>
+                    <p>Óculos inteligentes com sensores de vibração para pessoas com deficiência visual.</p>
+                    </a>
                 </div>
         
-                <div class="card">
+                <div class="card"><a href="projetos.html#dominion">
                     <div class="img-portfolio"><img src="./assets/img/projetos/Dominion mockup4.png" alt="Project"></div>
                     <h3 class="title">Dominion</h3>
                     <ul class="tags">
                         <li>Figma</li>
                         <li>UX Design</li>
                     </ul>
-                    <p>Rock concert ticket sales app. Created to securely unify events.</p>
+                    <p>Aplicativo de venda de ingressos para shows de rock. Criado para unificar eventos com segurança.</p>
+                    </a>
                 </div>
 
-                <div class="card">
+                <div class="card"><a href="projetos.html#matrioshka">
                     <div class="img-portfolio"><img src="./assets/img/projetos/Matrioshka Mockup.png" alt="Project"></div>
                     <h3 class="title">Matrioshka's</h3>
                     <ul class="tags">
                         <li>Figma</li>
                         <li>UX Design</li>
                     </ul>
-                    <p>Totem for a Russian restaurant. Inspired by the Slavic immigration in my city.</p>
+                    <p>Totem para um restaurante russo. Inspirado na imigração eslava na minha cidade.</p>
+                    </a>
                 </div>
             </div>
             
@@ -299,7 +295,7 @@
                             <img src="./assets/img/fotos/annahi.jpg" alt="White young woman with blond hair smiling">
                         </div>
                         <div class="name">
-                            <p><strong>Annahi Castellano</strong></p>
+                            <p class="nome"><strong>Annahi Castellano</strong></p>
                             <p>English Tutor</p>
                         </div>
                     </div>
@@ -313,7 +309,7 @@
                             <img src="./assets/img/fotos/Gabriella.jpg" alt="Black young woman smiling">
                         </div>
                         <div class="name">
-                            <p><strong>Gabriella Nacor</strong></p>
+                            <p class="nome"><strong>Gabriella Nacor</strong></p>
                             <p>Journalist and visual artist</p>
                         </div>
                     </div>
@@ -327,7 +323,7 @@
                             <img src="./assets/img/fotos/Yuri.jpg" alt="Black young man using pink t-shirt">
                         </div>
                         <div class="name">
-                            <p><strong>Yuri Santiago</strong></p>
+                            <p class="nome"><strong>Yuri Santiago</strong></p>
                             <p>Full Stack Developer</p>
                         </div>
                     </div>
@@ -410,18 +406,43 @@
         </section> -->
 
     <footer id="footer">
-        <div class="container-network">
-            <ul class="network">
-                <li><a href="mailto:adamsts2002@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-envelope" alt="Email"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/adam-sousa/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" alt="LinkedIn"></i></a></li>
-                <li><a href="https://github.com/adam-teixeira" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" alt="Github"></i></a></li>
-                <li><a href="https://medium.com/@adamsts" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-medium" alt="Medium"></i></a></li>
-                <li><a href="https://www.instagram.com/adteix.si/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" alt="Instagram"></i></a></li>
-            </ul>
-        </div>
-        <p>Em desenvolvimento por Adam, 2025.</p>
+            <div class="infos">
+                <p class="logo"><a href="#landing-page" class="logo">Ada<span class="logospan">M</span></a></p>
+                <p><i class="fa-solid fa-house"></i>Ipatecerica da Serra - São Paulo, Brasil</p>
+                <p><i class="fa-solid fa-envelope" alt="Email"></i>adamsts2002@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+55 (11) 96674-7761</p>
+            </div>
+            <div class="sitemap">
+                <h3>Sitemap</h3>
+                <ul>
+                    <li><a href="#landing-page">Início</a></li>
+                    <li><a href="#section-aboutme">Sobre</a></li>
+                    <li><a href="#section-portfolio">Portfólio</a></li>
+                    <li><a href="#section-testimonials">Testemunhos</a></li>
+                    <li><a href="#section-blog">Blog</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                </ul>
+            </div>
+            <div class="sitemap">
+                <h3>Projetos</h3>
+                <ul>
+                    <li><a href="projetos.html#ela">OMRA.ELA</a></li>
+                    <li><a href="projetos.html#sensoroptics">Sensor Optics</a></li>
+                    <li><a href="projetos.html#dominion">Dominion</a></li>
+                    <li><a href="projetos.html#matrioshka">Matrioshka's</a></li>
+                </ul>
+            </div>
+            <div class="container-network">
+                <ul class="network">
+                    <li><a href="mailto:adamsts2002@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope" alt="Email"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/adam-sousa/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" alt="LinkedIn"></i></a></li>
+                    <li><a href="https://github.com/adam-teixeira" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" alt="Github"></i></a></li>
+                    <li><a href="https://medium.com/@adamsts" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-medium" alt="Medium"></i></a></li>
+                    <li><a href="https://www.instagram.com/adteix.si/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" alt="Instagram"></i></a></li>
+                </ul>
+                <p>Em desenvolvimento por Adam, 2025.</p>     
+            </div>
     </footer>
-</div>
 
 <script src="./js/script.js"></script>
 

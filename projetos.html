@@ -12,36 +12,28 @@
 
 <body>
     <nav id="menu">
-        <div id="menu-left">
-            <a href="#" id="logo">Ada<span id="logospan">M</span></a>
-        </div>
-
-        <div id="menu-center">
-            <ul id="itens-menu">
-                <li><a href="#section-aboutme">Sobre</a></li>
-                <li><a href="#section-portfolio">Portfólio</a></li>
-                <li><a href="#section-testimonials">Testemunhos</a></li>
-                <li><a href="#section-blog">Blog</a></li>
-            </ul>
-        </div>
-
-        <div id="menu-right">
-            <button id="theme-switch">
-                <i class="fa-solid fa-moon"  id="icon-moon"></i>
-                <i class="fa-solid fa-sun" id="icon-sun"></i>
-            </button>
-            <button id="menu-mobile-icon"><i class="fa-solid fa-bars"></i></button>
-            <button class="btn-contact"><a href="#footer">Contato</a></button>
-        </div>
+        <ul id="itens-menu">
+            <li><a href="#landing-page">Início</a></li>
+            <li><a href="#section-aboutme">Sobre</a></li>
+            <li><a href="#section-portfolio">Portfólio</a></li>
+            <li class="logo"><a href="#landing-page" class="logo">Ada<span class="logospan">M</span></a></li>
+            <li><a href="#section-testimonials">Testemunhos</a></li>
+            <li><a href="#section-blog">Blog</a></li>
+            <li><a href="#footer">Contato</a></li>
+        </ul>
+        <button id="theme-switch">
+            <i class="fa-solid fa-moon" id="icon-moon"></i>
+            <i class="fa-solid fa-sun" id="icon-sun"></i>
+        </button>
     </nav>
 
-    <article id="dominion">
+    <article id="dominion" class="projeto">
         <header>
             <div class="logo-projeto"><img src="./assets/" alt="Logo Projeto"></div>
             <ul>
                 <li>Projeto: Dominion</li>
-                <li>Papel Desempenhado: Visual, Interação, Líder</li>
-                <li>Duração: Mês 0000 - Mês 0000 (0 semanas)</li>
+                <li>Papel Desempenhado: Pesquisa UX, Análise Competitiva, Prototipagem, Design de UI, Estratégia de Produto</li>
+                <li>Duração: Setembro 2023 - Junho 2024</li>
                 <button class="protótipo"><a href="#">Protótipo</a></button>
             </ul>
         </header>
@@ -50,24 +42,24 @@
             <div class="container">
                 <div>
                     <h2>Sobre o Projeto</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatem dolorum ea, mollitia eaque officiis pariatur possimus accusantium optio dolores cumque autem odit iste praesentium sequi suscipit voluptates distinctio laboriosam.</p>
+                    <p>Dominion é um aplicativo para compra de ingressos de shows de Rock, visando integrar todos os eventos desse gênero musical em um só lugar, evitando que o usuário precise acompanhar diversas plataformas, além de diminuir a burocracia durante a compra do ingresso. Esse projeto foi feito durante o curso "UX Design" fornecido pela Google.</p>
                 </div>
 
                 <div>
                     <h2>Desafios</h2>
                     <ol>
-                        <li>DesafioX</li>
-                        <li>DesafioX</li>
-                        <li>DesafioX</li>
-                        <li>DesafioX</li>
+                        <li>Diminuir a burocracia para se cadastrar;</li>
+                        <li>Criar uma interface excêntrica, mas coêsa;</li>
+                        <li>Manter a acessibilidade entre um design maximalista;</li>
+                        <li>Integrar funcionalidades que mantesse o usuário envolvido.</li>
                     </ol>
                 </div>
             </div>
-            <div class="imagem"><img src="" alt=""></div>
+            <div class="imagem"><img src="./assets/img/projetos/DOMINION - Case study.png" alt=""></div>
         </section>
     
         <section class="kickoff">
-            <h2>Kickoff - Pontapés Iniciais</h2>
+            <h2>Pontapés Iniciais</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas explicabo officia aliquid, neque distinctio atque error laboriosam iusto maxime adipisci porro magni minima iure quae accusamus expedita et ut vel.</p>
             <div class="container">
                 <p class="citação">"Pergunta"</p>
@@ -121,7 +113,7 @@
         </section>
     </article>
 
-    <article id="matrioshka">
+    <article id="matrioshka" class="projeto">
         <header>
             <div class="logo-projeto"><img src="./assets/" alt="Logo Projeto"></div>
             <ul>
@@ -207,93 +199,123 @@
         </section>
     </article>
 
-    <article id="ela">
+    <article id="ela" class="projeto">
         <header>
-            <div class="logo-projeto"><img src="./assets/" alt="Logo Projeto"></div>
-            <ul>
-                <li>Projeto: nome</li>
-                <li>Papel Desempenhado: Visual, Interação, Líder</li>
-                <li>Duração: Mês 0000 - Mês 0000 (0 semanas)</li>
-            </ul>
-            <button class="protótipo"><a href="#">Protótipo</a></button>
+            <div class="logo-projeto"><img src="./assets/img/projetos/OMRA.ELA capa.png" alt="Logo Projeto"></div>
+            <!-- <button class="protótipo"><a href="#">Artigo</a></button> -->
         </header>
     
         <section class="visao-geral">
             <div class="container">
                 <div>
                     <h2>Sobre o Projeto</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatem dolorum ea, mollitia eaque officiis pariatur possimus accusantium optio dolores cumque autem odit iste praesentium sequi suscipit voluptates distinctio laboriosam.</p>
+                        <p>Este projeto consiste no desenvolvimento de uma órtese robótica de baixo custo para auxiliar pacientes diagnosticados com Esclerose Lateral Amiotrófica (ELA). Utilizando a plataforma Arduino e técnicas de prototipagem rápida, o objetivo é oferecer uma solução acessível e funcional de tecnologia assistiva.</p>
+                        <p>Esperamos que essa órtese possa utilizada para atender a todos os pacientes que apresentem fraqueza muscular e comprometimento funcional do membro superior.</p>
                 </div>
+
     
-                <div>
-                    <h2>Desafios</h2>
-                    <ol>
-                        <li>DesafioX</li>
-                        <li>DesafioX</li>
-                        <li>DesafioX</li>
-                        <li>DesafioX</li>
-                    </ol>
+                <div class="papel card-static">
+                    <div class="gap"><h3><i class="fa-solid fa-file-zipper"></i>Projeto</h3><p>OMRA.ELA: Órtese de Mão robótica com Arduino Para Esclerose Lateral Amiotrófica.</p></div>
+                    <div class="gap"><h3><i class="fa-solid fa-user"></i>Papel Desempenhado</h3><p>Gestão de Projetos, Documentação Técnica e Modelagem CAD 2D/3D</p></div>
+                    <div class="gap"><h3><i class="fa-solid fa-hourglass-start"></i>Duração</h3><p>Março 2025 - Em Desenvolvimento</p></div>
                 </div>
             </div>
-            <div class="imagem"><img src="" alt=""></div>
         </section>
     
-        <section class="kickoff">
-            <h2>Kickoff - Pontapés Iniciais</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas explicabo officia aliquid, neque distinctio atque error laboriosam iusto maxime adipisci porro magni minima iure quae accusamus expedita et ut vel.</p>
+        <section class="contexto">
+                <h2>Entendendo a ELA</h2>
+                <p>A Esclerose Lateral Amiotrófica (ELA) é uma doença neurodegenerativa progressiva que compromete os neurônios motores, resultando em fraqueza muscular e, posteriormente, paralisia. A progressão da doença envolve perda gradual do controle da movimentação corpo, atingindo diretamente a capacidade de realizar atividades da vida diária.</p>
+        </section>
+    
+        <section class="funcionamento">
+            <h2>Biomecânica da Mão Humana</h2>
+            <p>A mão é formada por 27 ossos divididos em três grupos principais: ossos do carpo, metacarpos e falanges. Essa configuração óssea proporciona a base estrutural para os movimentos funcionais que a mão executa. </p>
+            <div class="imagem"><img src="./assets/img/projetos/Anatomia da mão.png" alt="Anatomia da mão humana com destaque para tendões e músculos responsáveis pelos movimentos digitais"></div>
+            <p>Os movimentos fisiológicos da mão envolvem flexão, extensão, abdução, adução e movimentos de oposição. A flexão e extensão ocorrem principalmente nas articulações interfalângicas (proximal e distal) e metacarpofalângicas, com graus de movimento que variam conforme cada articulação.</p>
+            <p>No contexto da ELA, ocorre a perda gradual da força muscular, comprometendo a função de flexão, extensão e outros movimentos da mão. </p>
+            <div class="imagem"><img src="./assets/img/projetos/Movimento da mão.png" alt="Movimento das mãos e seus nomes"></div>
+    </section>
+
+    <section class="materiais">
+            <h2>Materiais e Componentes</h2>
+            <p>Para o desenvolvimento da órtese robótica, foram selecionados materiais que equilibram viabilidade técnica, baixo custo e facilidade de acesso no mercado nacional, de forma a garantir que o projeto se mantenha reproduzível e open source. No total, resultando em R$ 386,67.</p>
             <div class="container">
-                <p class="citação">"Pergunta"</p>
-                <p class="citação">"Pergunta"</p>
-                <p class="citação">"Pergunta"</p>
+                <div class="Material">
+                    <div class="componente"><img src="./assets/img/projetos/arduino.png" alt="Arduino Uno R3 Atmega328p"></div>
+                    <h3 class="title">Arduino Uno R3 Atmega328p</h3>
+                    <p>Microcontrolador central do sistema.</p>
+                    <p>R$ 40,00</p>
+                </div>
+                <div class="Material">
+                    <div class="componente"><img src="./assets/img/projetos/Microservo.jpg" alt="Micro Servomotores SG90"></div>
+                    <h3 class="title">Micro Servomotores SG90</h3>
+                    <p>Responsáveis pela tração dos fios de nylon que simulam os tendões.</p>
+                    <p>R$ 84,99</p>
+                </div>
+                <div class="Material">
+                    <div class="componente"><img src="./assets/img/projetos/Filamento Pla.jpg" alt="Filamento Pla 1.75mm Impressora"></div>
+                    <h3 class="title">Filamento Pla 1.75mm Impressora</h3>
+                    <p>Utilizada como material para impressões 3D.</p>
+                    <p>R$ 124,00</p>
+                </div>
+                <div class="Material">
+                    <div class="componente"><img src="./assets/img/projetos/fio de nylon.png" alt="Fios de nylon 1.0mm"></div>
+                    <h3 class="title">Fios de nylon 1.0mm</h3>
+                    <p>Simulam a função dos tendões humanos.</p>
+                    <p>R$ 34,87</p>
+                </div>
+                <div class="Material">
+                    <div class="componente"><img src="./assets/img/projetos/cabos jumper.png" alt="Cabos Jumper"></div>
+                    <h3 class="title">Cabos Jumper</h3>
+                    <p>Cabos condutores que servem para conectar diferentes componentes eletrônicos ao Arduino.</p>
+                    <p>R$ 26,00</p>
+                </div>
+                <div class="Material">
+                    <div class="componente"><img src="./assets/img/projetos/luva.jpg" alt="Luva"></div>
+                    <h3 class="title">Luva</h3>
+                    <p>Para cobrir a mão e servir como suporte aos demais componentes.</p>
+                    <p>R$ 34,00</p>
+                </div>
+                <div class="Material">
+                    <div class="componente"><img src="./assets/img/projetos/controlador.png" alt="Controlador Pwm"></div>
+                    <h3 class="title">Controlador Pwm</h3>
+                    <p>Para expandir a capacidade de controle da placa.</p>
+                    <p>R$ 42,90</p>
+                </div>
+                <div class="Material">
+                    <div class="componente"><img src="./assets/img/projetos/aneis reguláveis.png" alt="Aneis ajustáveis com furo"></div>
+                    <h3 class="title">Aneis ajustáveis com furo</h3>
+                    <p>É pelos buraquinhos desse anel que o fio nylon vai passar.</p>
+                    <p>R$ 21,89</p>
+                </div>
             </div>
         </section>
-    
-        <section class="users">
-            <h2>Conheça os Usuários</h2>
-            <div class="container">
-                <!-- inseir as personas -->
+
+        <section class="modelagem">
+            <h2>Modelagem 2D e 3D</h2>
+            <p>A órtese foi modelada em AutoCad e ThinkCad, sendo montada sobre uma luva que serve de suporte para os fios de nylon fixados em anéis 3D de filamento PLA. Esses fios são tracionados por cinco servomotores SG90, posicionados em um compartimento no dorso da mão ou no antebraço, promovendo o fechamento individual dos dedos.</p>
+            <p>O sistema é controlado por uma Placa Arduino Uno R3, programada em C, que aciona os servos de forma coordenada. Para expandir o número de portas PWM, utiliza-se o módulo PCA9685, conectado via protocolo I2C. As ligações são feitas com cabos jumper, garantindo flexibilidade de montagem.</p>
+            <p>A lógica do protótipo replica a biomecânica da preensão, onde o tracionamento do fio dobra as articulações dos dedos em sequência, reproduzindo o movimento natural de fechar a mão.</p>
+
+            <div class="imagem"><img src="./assets/img/projetos/Desenho 2d.png" alt="Modelo 3D da órtese desenvolvido no FreeCAD"></div>
+            <div class="imagem"><img src="./assets/img/projetos/Desenho 3d.png" alt="Modelo 3D da órtese desenvolvido no FreeCAD"></div>
+        </section>
+
+        <section class="execucao">
+            <h2>Cronograma de Execução</h2>
+            <p>O cronograma foi dividido em cinco etapas principais: concepção, definição técnica, execução prática, testes laboratoriais e finalização. Cada fase incluiu atividades específicas como estudos anatômicos, reuniões técnicas, impressão de peças e testes de usabilidade.</p>
+            <div class="imagem">
+                <img src="./assets/img/projetos/Cronograma de projetos.png" alt="Cronograma detalhado de execução do projeto">
             </div>
         </section>
-    
-        <section class="competitivo">
-            <h2>Auditoria Competitiva</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates praesentium autem eaque ex quasi dolores doloremque laudantium repudiandae asperiores, possimus necessitatibus placeat dolore vero assumenda dolorum porro fugiat perferendis!</p>
-            <div class="container">
-                <div class="imagem"><img src="" alt=""><a href=""></a></div>
-            </div>
-        </section>
-    
-        <section class="começo">
-            <h2>Começando a Jornada</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti reiciendis, officia laborum pariatur quis est, architecto corrupti dolore ipsa fugit. Culpa, similique exercitationem odio labore fuga doloribus nemo mollitia?</p>
-        </section>
-    
-        <section class="fluxo">
-            <h2>Wireframes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere earum, voluptates eaque, facilis maiores ratione ducimus deleniti explicabo iure accusantium beatae asperiores sit numquam rerum? Laudantium, architecto suscipit? Quidem, labore.</p>
-        </section>
-    
-        <section class="usabilidade">
-            <h2>Usabilidade</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla vel commodi error hic dolorum dignissimos non provident debitis corporis assumenda quisquam harum maiores reiciendis, quam deserunt iure. Voluptatum, alias quae.</p>
-        </section>
-    
-        <section class="prototipo">
-            <h2>Prototipagem</h2>
-        </section>
-    
-        <section class="guia-estilo">
-            <h2>Guia de Estilo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis harum praesentium, dignissimos excepturi iste ipsam nobis minima sequi doloribus delectus alias provident repellat maxime unde error ut omnis? Praesentium!</p>
-        </section>
-    
+
         <section class="futuro">
             <h2>Planejamentos Futuros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis tenetur enim repudiandae quo placeat excepturi labore iusto molestiae quia ipsa, reiciendis tempora maxime quisquam, quod eum tempore voluptatum consectetur! Ab.</p>
+            <p>As próximas etapas incluem a montagem da órtese, testes funcionais com pacientes, coleta de métricas de desempenho e análise estatística da eficácia da órtese. Além disso, será explorada a possibilidade de adaptar o protótipo para outras condições que afetam a mobilidade da mão.</p>
         </section>
     </article>
 
-    <article id="sensoroptics">
+    <article id="sensoroptics" class="projeto">
         <header>
             <div class="logo-projeto"><img src="./assets/" alt="Logo Projeto"></div>
             <ul>
@@ -379,6 +401,45 @@
         </section>
     </article>
     
+
+       <footer id="footer">
+            <div class="infos">
+                <p class="logo"><a href="#landing-page" class="logo">Ada<span class="logospan">M</span></a></p>
+                <p><i class="fa-solid fa-house"></i>Ipatecerica da Serra - São Paulo, Brasil</p>
+                <p><i class="fa-solid fa-envelope" alt="Email"></i>adamsts2002@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+55 (11) 96674-7761</p>
+            </div>
+            <div class="sitemap">
+                <h3>Sitemap</h3>
+                <ul>
+                    <li><a href="#landing-page">Início</a></li>
+                    <li><a href="#section-aboutme">Sobre</a></li>
+                    <li><a href="#section-portfolio">Portfólio</a></li>
+                    <li><a href="#section-testimonials">Testemunhos</a></li>
+                    <li><a href="#section-blog">Blog</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                </ul>
+            </div>
+            <div class="sitemap">
+                <h3>Projetos</h3>
+                <ul>
+                    <li><a href="projetos.html#ela">OMRA.ELA</a></li>
+                    <li><a href="projetos.html#sensoroptics">Sensor Optics</a></li>
+                    <li><a href="projetos.html#dominion">Dominion</a></li>
+                    <li><a href="projetos.html#matrioshka">Matrioshka's</a></li>
+                </ul>
+            </div>
+            <div class="container-network">
+                <ul class="network">
+                    <li><a href="mailto:adamsts2002@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope" alt="Email"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/adam-sousa/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" alt="LinkedIn"></i></a></li>
+                    <li><a href="https://github.com/adam-teixeira" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" alt="Github"></i></a></li>
+                    <li><a href="https://medium.com/@adamsts" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-medium" alt="Medium"></i></a></li>
+                    <li><a href="https://www.instagram.com/adteix.si/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" alt="Instagram"></i></a></li>
+                </ul>
+                <p>Em desenvolvimento por Adam, 2025.</p>     
+            </div>
+    </footer>
 
     <script src="./js/script.js"></script>
 </body>
