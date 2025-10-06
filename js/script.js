@@ -90,27 +90,27 @@ if (themeSwitch) {
 // reloadSlider();
 
 
-// window.onload = () => {
-//   const hash = window.location.hash.substring(1); // pega o que vem depois de #
-//   const artigos = document.querySelectorAll("article");
+window.onload = () => {
+  const hash = window.location.hash.substring(1); // pega o que vem depois de #
+  const artigos = document.querySelectorAll("article");
 
-//   // Esconde todos os artigos
-//   artigos.forEach(artigo => {
-//     artigo.style.display = "none";
-//   });
+  // Esconde todos os artigos
+  artigos.forEach(artigo => {
+    artigo.style.display = "none";
+  });
 
-//   // Mostra só o que tem o id do hash
-//   if (hash) {
-//     const escolhido = document.getElementById(hash);
-//     if (escolhido) {
-//       escolhido.style.display = "block";
-//     }
-//   }
+  // Mostra só o que tem o id do hash
+  if (hash) {
+    const escolhido = document.getElementById(hash);
+    if (escolhido) {
+      escolhido.style.display = "block";
+    }
+  }
 
-//   // Garante que o footer sempre aparece
-//   const footer = document.querySelector("footer");
-//   if (footer) footer.style.display = "block";
-// };
+  // Garante que o footer sempre aparece
+  const footer = document.querySelector("footer");
+  if (footer) footer.style.display = "block";
+};
 
 
 //menu desaparecendo
