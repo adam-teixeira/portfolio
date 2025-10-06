@@ -15,12 +15,12 @@ header ul{
 
 .container {
     display: flex;
-    gap: 5em;
+    gap: 3em;
     align-items: center;
 }
 
 .container div{
-    flex: 1 1 calc(50% - 10rem); /* ocupa 50% menos o gap */
+    flex: 1 1 calc(50% - 3rem); /* ocupa 50% menos o gap */
     box-sizing: border-box;  
 }
 
@@ -28,11 +28,13 @@ header ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60vw;
+    width: 100%;
 }
 
 .visao-geral .imagem img{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 .papel i{
@@ -66,11 +68,10 @@ section {
     border: 20px solid var(--primaria);
 }
 
-.materiais .container {
+.materiais .container{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem; /* espaço entre os cards */
-    justify-content: center;
     text-align: center;
 }
 
@@ -117,4 +118,70 @@ p{
     height: 120px;
     border-radius: 100px; 
     border: 20px solid var(--primaria);
+}
+
+.citação{
+    padding: 5px 0px 5px 10px;
+    border-left: 2px solid var(--destaque);
+    font-style: italic;
+}
+
+.citação, .insights, .materiais{
+    margin-top: 50px;
+}
+
+.kickoff .container p{
+    flex: 1 1 calc(50% - 5rem);
+}
+
+.insights i{
+    padding: 30px;
+    font-size: 30px;
+    border: 1px solid var(--destaque);
+    border-radius: 100%;
+    color: var(--destaque);
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.insights {
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.usabilidade .imagem img, .visao-geral .imagem img{
+    border: none;
+    border-radius: 0;
+    margin-top: 100px;
+}
+
+.usabilidade .imagem img:hover, .visao-geral .imagem img:hover{
+    transform: none;
+    cursor:default;
+}
+
+.nota{
+    background-color: rgb(252, 189, 107);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+.nota h3, .nota p{
+    color: #4f2e03;
+}
+
+.nota p:last-child{
+    font-style: italic;
+    color: #9a5f11;
+    text-align: end;
+}
+
+/* h2{
+    font-family: globe;
+} */
+
+.section-title{
+    text-align: start;
+    padding: 20px 0px 20px 0px;
 }
