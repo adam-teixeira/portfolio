@@ -1,29 +1,29 @@
 //Darkmode
 const themeSwitch = document.getElementById('theme-switch');
 const root = document.documentElement; // <html>
-let darkmode = localStorage.getItem('darkmode');
+let lightmode = localStorage.getItem('lightmode');
 
-const enableDarkMode = () => {
-  root.classList.add('darkmode');
-  localStorage.setItem('darkmode', 'active');
+const enableLightMode = () => {
+  root.classList.add('lightmode');
+  localStorage.setItem('lightmode', 'active');
 };
 
-const disableDarkmode = () => {
-  root.classList.remove('darkmode');
-  localStorage.removeItem('darkmode');
+const disableLightmode = () => {
+  root.classList.remove('lightmode');
+  localStorage.removeItem('lightmode');
 };
 
 // aplica estado salvo ao carregar
-if (darkmode === 'active') enableDarkMode();
+if (lightmode === 'active') enableLightMode();
 
 // toggle no clique
 if (themeSwitch) {
   themeSwitch.addEventListener('click', () => {
-    darkmode = localStorage.getItem('darkmode');
-    if (darkmode !== 'active') {
-      enableDarkMode();
+    lightmode = localStorage.getItem('lightmode');
+    if (lightmode !== 'active') {
+      enableLightMode();
     } else {
-      disableDarkmode();
+      disableLightmode();
     }
   });
 }
@@ -90,27 +90,27 @@ if (themeSwitch) {
 // reloadSlider();
 
 
-window.onload = () => {
-  const hash = window.location.hash.substring(1); // pega o que vem depois de #
-  const artigos = document.querySelectorAll("article");
+// window.onload = () => {
+//   const hash = window.location.hash.substring(1); // pega o que vem depois de #
+//   const artigos = document.querySelectorAll("article");
 
-  // Esconde todos os artigos
-  artigos.forEach(artigo => {
-    artigo.style.display = "none";
-  });
+//   // Esconde todos os artigos
+//   artigos.forEach(artigo => {
+//     artigo.style.display = "none";
+//   });
 
-  // Mostra só o que tem o id do hash
-  if (hash) {
-    const escolhido = document.getElementById(hash);
-    if (escolhido) {
-      escolhido.style.display = "block";
-    }
-  }
+//   // Mostra só o que tem o id do hash
+//   if (hash) {
+//     const escolhido = document.getElementById(hash);
+//     if (escolhido) {
+//       escolhido.style.display = "block";
+//     }
+//   }
 
-  // Garante que o footer sempre aparece
-  const footer = document.querySelector("footer");
-  if (footer) footer.style.display = "block";
-};
+//   // Garante que o footer sempre aparece
+//   const footer = document.querySelector("footer");
+//   if (footer) footer.style.display = "block";
+// };
 
 
 //menu desaparecendo
@@ -160,3 +160,25 @@ window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
 
 
+// Cria o modal
+const modal = document.createElement('div');
+modal.classList.add('image-modal');
+const modalImg = document.createElement('img');
+modal.appendChild(modalImg);
+document.body.appendChild(modal);
+
+// Seleciona todas as imagens clicáveis
+document.querySelectorAll('.imagem img').forEach(img => {
+  img.addEventListener('click', () => {
+    modalImg.src = img.src;
+    modal.classList.add('active');
+  });
+});
+
+// Fecha o modal clicando fora da imagem ou apertando ESC
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) modal.classList.remove('active');
+});
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') modal.classList.remove('active');
+});

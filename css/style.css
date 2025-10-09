@@ -48,7 +48,7 @@
     src: url('../assets/fontes/hot-dog-font/HotDogPersonalUseRegular-p7mEZ.ttf');
 }
 
-:root {
+:root.lightmode {
   --titulos: #23272a;
   --texto: #4d4d4d;
   --input: #787879;
@@ -62,8 +62,7 @@
   --gradient-blur: linear-gradient(90deg, #ebf7f595 0%, #f5f5e394 50%, #f5e4dc98 100%);
 }
 
-/* APLIQUE a classe no <html> (root) */
-:root.darkmode {
+:root {
   --titulos: #fafafa;
   --texto: #d7d7d7;
   --input: rgb(215, 215, 215);
@@ -119,12 +118,8 @@ img{
 } */
 
 /* body {
-  background: 
-    url("./assets/foto-padrao-de-textura-da-parede.jpg") repeat,
-    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  background-size: 100%;
-  background-color: #423A57;
-  background-blend-mode: lighten; 
+    background: var(--gradient);
+    background-image: url("../assets/img/wallpaper/nnnoise.svg");
 } */
 
 body::-webkit-scrollbar {
